@@ -22,4 +22,13 @@
         <url-pattern>/greeting</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Import</servlet-name>
+        <jsp-file>/import.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Import</servlet-name>
+        <url-pattern>/import_time</url-pattern>
+    </servlet-mapping>
+
 </web-app>
