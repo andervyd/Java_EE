@@ -5,13 +5,21 @@
          version="4.0">
 
     <servlet>
-        <servlet-name>by.andervyd.Servlet</servlet-name>
+        <servlet-name>Servlet</servlet-name>
         <servlet-class>by.andervyd.Servlet</servlet-class>
     </servlet>
-    
     <servlet-mapping>
-        <servlet-name>by.andervyd.Servlet</servlet-name>
+        <servlet-name>Servlet</servlet-name>
         <url-pattern>/servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Greeting</servlet-name>
+        <jsp-file>/greeting.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Greeting</servlet-name>
+        <url-pattern>/greeting</url-pattern>
     </servlet-mapping>
 
 </web-app>
