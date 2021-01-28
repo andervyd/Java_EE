@@ -14,6 +14,24 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>ServletCount</servlet-name>
+        <servlet-class>by.andervyd.ServletCount</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletCount</servlet-name>
+        <url-pattern>/servlet_count</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletCart</servlet-name>
+        <servlet-class>by.andervyd.ServletCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletCart</servlet-name>
+        <url-pattern>/cart_info</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Greeting</servlet-name>
         <jsp-file>/greeting.jsp</jsp-file>
     </servlet>
