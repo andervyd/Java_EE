@@ -31,4 +31,13 @@
         <url-pattern>/import_time</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Get</servlet-name>
+        <jsp-file>/get.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Get</servlet-name>
+        <url-pattern>/get_param</url-pattern>
+    </servlet-mapping>
+
 </web-app>

@@ -18,11 +18,12 @@ public class Servlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        PrintWriter printWriter = response.getWriter();
+        String name = request.getParameter("name");
+        String surname = request.getParameter("surname");
 
-        printWriter.println
-                ("<html>\n" +
-                 "Method 'doGet()' call ...\n" +
-                 "</html>");
+        PrintWriter printWriter = response.getWriter();
+        printWriter.println("<html>");
+        printWriter.println("Hello, " + name + " " + surname);
+        printWriter.println("</html>");
     }
 }
