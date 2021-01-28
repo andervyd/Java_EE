@@ -67,4 +67,32 @@
         <url-pattern>/info</url-pattern>
     </servlet-mapping>
 
+<!--    cookies: -->
+    <servlet>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <servlet-class>by.andervyd.cookies.SetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <url-pattern>/set_cookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <servlet-class>by.andervyd.cookies.GetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <url-pattern>/get_cookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <servlet-class>by.andervyd.cookies.DeleteCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <url-pattern>/delete_cookies</url-pattern>
+    </servlet-mapping>
+
 </web-app>
