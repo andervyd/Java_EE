@@ -1,5 +1,6 @@
 package by.andervyd;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -25,5 +26,13 @@ public class Servlet extends HttpServlet {
         printWriter.println("<html>");
         printWriter.println("Hello, " + name + " " + surname);
         printWriter.println("</html>");
+
+        // redirect
+//        response.sendRedirect("https://google.com");
+//        response.sendRedirect("/info");
+
+        // forward (only server links)
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/info");
+        dispatcher.forward(request, response);
     }
 }
